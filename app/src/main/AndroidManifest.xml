@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="kr.ac.mju.cd2020shwagwan">
+
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,6 +15,7 @@
         android:theme="@style/AppTheme"
         android:hardwareAccelerated="true"
         >
+        
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -35,10 +38,9 @@
         </receiver>
 
         <receiver android:name=".AlarmReceiver" />
-
     </application>
 
-
+</manifest>
 
 
 </manifest>
